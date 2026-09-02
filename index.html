@@ -1,0 +1,1592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Josephine Ashdown | Professional CV</title>
+
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            background-color: #d9d9d9;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #2b2b2b;
+            line-height: 1.6;
+        }
+
+
+        .cv-container {
+            max-width: 1100px;
+            margin: auto;
+            background-color: #ffffff;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
+        }
+
+
+
+        /* =========================
+           HEADER
+           ========================= */
+
+        .header {
+            background-color: #111111;
+            color: white;
+            padding: 35px 45px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+        }
+
+
+        .header-text {
+            flex: 1;
+        }
+
+
+        .header h1 {
+            margin: 0;
+            font-size: 44px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+
+        .header h2 {
+            margin: 8px 0 0;
+            font-size: 18px;
+            font-weight: normal;
+            color: #cccccc;
+        }
+
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+
+            object-fit: cover;
+            object-position: center 35%;
+
+            border-radius: 50%;
+            border: 4px solid white;
+
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.35);
+        }
+
+
+
+        /* =========================
+        CONTACT BAR
+           ========================= */
+
+        .contact-bar {
+            background-color: #555555;
+            color: white;
+            padding: 14px 45px;
+
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px 25px;
+
+            font-size: 14px;
+        }
+
+
+        .contact-bar a {
+            color: white;
+            text-decoration: none;
+        }
+
+
+        .contact-bar a:hover {
+            text-decoration: underline;
+        }
+
+
+
+        /* =========================
+         MAIN LAYOUT
+           ========================= */
+
+        .cv-content {
+            display: grid;
+            grid-template-columns: 30% 70%;
+        }
+
+
+        .sidebar {
+            background-color: #e6e6e6;
+            padding: 35px;
+        }
+
+
+        .main-content {
+            background-color: white;
+            padding: 35px 45px;
+        }
+
+
+
+        /* =========================
+           SECTION HEADINGS
+           ========================= */
+
+        h3 {
+            text-transform: uppercase;
+            font-size: 17px;
+            letter-spacing: 1.5px;
+            color: #111111;
+
+            border-bottom: 3px solid #111111;
+
+            padding-bottom: 7px;
+            margin-top: 0;
+            margin-bottom: 18px;
+        }
+
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+
+
+        /* =========================
+           PROFILE
+           ========================= */
+
+        .profile p {
+            margin-top: 0;
+            margin-bottom: 16px;
+        }
+
+
+
+        /* =========================
+           SKILLS
+           ========================= */
+
+        .skills {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+
+        .skills li {
+            background-color: #d1d1d1;
+
+            margin-bottom: 8px;
+            padding: 8px 10px;
+
+            border-left: 4px solid #111111;
+
+            font-size: 14px;
+        }
+
+
+
+        /* =========================
+           SIMPLE LISTS
+           ========================= */
+
+        .simple-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+
+        .simple-list li {
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+
+
+        /* =========================
+           VOLUNTEERING
+           ========================= */
+
+        .volunteer-item {
+            margin-bottom: 18px;
+        }
+
+
+        .volunteer-item strong {
+            display: block;
+            color: #111111;
+        }
+
+
+        .volunteer-item span {
+            display: block;
+            color: #666666;
+            font-size: 13px;
+        }
+
+
+        .volunteer-item p {
+            margin-top: 5px;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+
+
+        /* =========================
+           EXPERIENCE
+           ========================= */
+
+        .job {
+            margin-bottom: 36px;
+        }
+
+
+        .job h4 {
+            margin: 0;
+            font-size: 19px;
+            color: #111111;
+        }
+
+
+        .company {
+            font-weight: bold;
+            color: #555555;
+            margin-top: 2px;
+        }
+
+
+        .date {
+            font-size: 14px;
+            color: #777777;
+            margin-bottom: 12px;
+        }
+
+
+        .job p {
+            margin-top: 0;
+            margin-bottom: 12px;
+        }
+
+
+        .job ul {
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+
+
+        .job li {
+            margin-bottom: 8px;
+        }
+
+
+
+        /* =========================
+           ACHIEVEMENTS
+           ========================= */
+
+        .achievement {
+            background-color: #f1f1f1;
+
+            border-left: 4px solid #111111;
+
+            padding: 12px 14px;
+            margin: 14px 0;
+        }
+
+
+
+        /* =========================
+           EDUCATION
+           ========================= */
+
+        .education-item {
+            margin-bottom: 18px;
+            font-size: 14px;
+        }
+
+
+        .education-item strong {
+            display: block;
+            color: #111111;
+        }
+
+
+
+        /* =========================
+           EARLIER CAREER
+           ========================= */
+
+        .earlier-job {
+            border-left: 3px solid #888888;
+            padding-left: 18px;
+            margin-bottom: 28px;
+        }
+
+
+        .earlier-job h4 {
+            margin: 0;
+            font-size: 17px;
+            color: #111111;
+        }
+
+
+        .earlier-job .company {
+            margin-top: 2px;
+        }
+
+
+        .earlier-job p {
+            margin: 8px 0;
+        }
+
+
+        .earlier-job ul {
+            margin-top: 8px;
+            padding-left: 20px;
+        }
+
+
+        .earlier-job li {
+            margin-bottom: 6px;
+        }
+
+
+
+
+        /* =========================
+           TOP DOWNLOAD BAR
+           ========================= */
+
+        .top-actions {
+            background-color: #f1f1f1;
+            padding: 12px 45px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            border-bottom: 1px solid #d0d0d0;
+        }
+
+        .download-button {
+            display: inline-block;
+            background-color: #111111;
+            color: #ffffff;
+            padding: 10px 18px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            border-radius: 4px;
+            transition: background-color 0.2s ease;
+        }
+
+        .download-button:hover {
+            background-color: #555555;
+        }
+
+        /* =========================
+           FOOTER
+           ========================= */
+
+        .footer {
+            background-color: #111111;
+            color: #cccccc;
+
+            text-align: center;
+
+            padding: 15px;
+
+            font-size: 12px;
+        }
+
+
+
+        /* =========================
+           MOBILE
+           ========================= */
+
+        @media screen and (max-width: 800px) {
+
+            body {
+                padding: 0;
+            }
+
+
+            .header {
+                flex-direction: column-reverse;
+                text-align: center;
+                padding: 30px;
+            }
+
+
+            .header h1 {
+                font-size: 34px;
+            }
+
+
+            .profile-photo {
+                width: 130px;
+                height: 130px;
+            }
+
+
+            .top-actions {
+                justify-content: center;
+                padding: 12px 20px;
+            }
+
+            .contact-bar {
+                padding: 15px 30px;
+                display: block;
+            }
+
+
+            .contact-bar span {
+                display: block;
+                margin-bottom: 7px;
+            }
+
+
+            .cv-content {
+                grid-template-columns: 1fr;
+            }
+
+
+            .sidebar,
+            .main-content {
+                padding: 30px;
+            }
+        }
+
+
+
+        /* =========================
+           PRINT
+           ========================= */
+
+        @media print {
+
+            body {
+                background-color: white;
+                padding: 0;
+            }
+
+
+            .cv-container {
+                box-shadow: none;
+            }
+
+
+            .job,
+            .earlier-job {
+                page-break-inside: avoid;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+
+<body>
+
+
+<div class="cv-container">
+
+    <!-- DOWNLOAD CV -->
+    <div class="top-actions">
+        <a
+            href="Josephine_Ashdown_CV_ATS.pdf"
+            class="download-button"
+            download>
+            Download CV - PDF
+        </a>
+    </div>
+
+
+    <!-- =========================
+         HEADER
+         ========================= -->
+
+    <header class="header">
+
+
+        <div class="header-text">
+
+            <h1>Josephine Ashdown</h1>
+
+            <h2>
+                Data & Technology Leader |
+                Engineering |
+                Data Platforms |
+                Digital Transformation
+            </h2>
+
+        </div>
+
+
+        <img
+            src="Facetune_14-08-2026-11-24-08.jpeg"
+            alt="Josephine Ashdown"
+            class="profile-photo">
+
+    </header>
+
+
+
+    <!-- =========================
+         CONTACT
+         ========================= -->
+
+    <div class="contact-bar">
+
+
+        <span>
+            📍 Milton Keynes, UK
+        </span>
+
+
+        <span>
+
+            ☎
+
+            <a href="tel:07875445196">
+                07875 445196
+            </a>
+
+        </span>
+
+
+        <span>
+
+            ✉
+
+            <a href="mailto:josephinesashdown@gmail.com">
+                josephinesashdown@gmail.com
+            </a>
+
+        </span>
+
+
+        <span>
+
+            LinkedIn:
+
+            <a
+                href="https://www.linkedin.com/in/jo-a-045180176"
+                target="_blank">
+
+                jo-a-045180176
+
+            </a>
+
+        </span>
+</div>
+    <div class="cv-content">
+
+        <!-- =========================
+             SIDEBAR
+             ========================= -->
+
+        <aside class="sidebar">
+
+
+            <!-- CORE SKILLS -->
+
+            <section class="section">
+
+
+                <h3>Core Skills</h3>
+
+
+                <ul class="skills">
+
+                    <li>Data Strategy</li>
+
+                    <li>Data Engineering</li>
+
+                    <li>Data Platforms</li>
+
+                    <li>Data Products</li>
+
+                    <li>Data Governance</li>
+
+                    <li>Digital Transformation</li>
+
+                    <li>Cloud Architecture</li>
+
+                    <li>Engineering Leadership</li>
+
+                    <li>Operational Leadership</li>
+
+                    <li>Executive Stakeholders</li>
+
+                    <li>Agile & Lean Delivery</li>
+
+                    <li>AI & Automation</li>
+
+                </ul>
+
+
+            </section>
+
+
+
+            <!-- TECHNOLOGY -->
+
+            <section class="section">
+
+
+                <h3>Technology</h3>
+
+
+                <ul class="simple-list">
+
+                    <li>GCP</li>
+
+                    <li>AWS</li>
+
+                    <li>BigQuery</li>
+
+                    <li>Redshift</li>
+
+                    <li>Databricks</li>
+
+                    <li>Microsoft Fabric</li>
+
+                    <li>Atlan</li>
+
+                    <li>Unity Catalog</li>
+
+                    <li>Monte Carlo</li>
+
+                    <li>dbt</li>
+
+                    <li>Tableau</li>
+
+                    <li>Looker</li>
+
+                    <li>SQL</li>
+
+                    <li>Python</li>
+
+                    <li>Scala</li>
+
+                </ul>
+
+
+            </section>
+
+
+
+            <!-- VOLUNTEERING -->
+
+            <section class="section">
+
+
+                <h3>Volunteering</h3>
+
+
+                <div class="volunteer-item">
+
+                    <strong>
+                        Trustee
+                    </strong>
+
+                    <span>
+                        MK Play Association
+                    </span>
+
+                    <p>
+                        Supported organisational governance,
+                        strategy and oversight within a
+                        community-focused charitable organisation.
+                    </p>
+
+                </div>
+
+
+                <div class="volunteer-item">
+
+                    <strong>
+                        Interim CEO
+                    </strong>
+
+                    <span>
+                        MK Play Association
+                    </span>
+
+                    <p>
+                        Provided interim leadership during the
+                        Covid-19 period, supporting organisational
+                        continuity, people and service delivery.
+                    </p>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- EDUCATION -->
+
+            <section class="section">
+
+
+                <h3>Education</h3>
+
+
+                <div class="education-item">
+
+                    <strong>
+                        MSc Computer Science & AI Engineering
+                    </strong>
+
+                    Currently Studying
+
+                </div>
+
+
+                <div class="education-item">
+
+                    <strong>
+                        PGDip Digital Technology Solutions
+                    </strong>
+
+                    Manchester Metropolitan University
+
+                </div>
+
+
+                <div class="education-item">
+
+                    <strong>
+                        BSc Information Technology Management
+                        for Business
+                    </strong>
+
+                    University of Hertfordshire
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- CERTIFICATIONS -->
+
+            <section class="section">
+
+
+                <h3>Certifications</h3>
+
+
+                <ul class="simple-list">
+
+                    <li>
+                        CMI Level 5 Diploma in Management & Leadership
+                    </li>
+
+                    <li>SAFe Agilist</li>
+
+                    <li>Certified Scrum Master</li>
+
+                    <li>AgilePM Practitioner</li>
+
+                    <li>PRINCE2</li>
+
+                    <li>ITIL v4</li>
+
+                    <li>Kanban</li>
+
+                    <li>
+                        Change Management Practitioner
+                    </li>
+
+                </ul>
+
+
+            </section>
+
+
+        </aside>
+
+
+
+        <!-- =========================
+             MAIN CONTENT
+             ========================= -->
+
+        <main class="main-content">
+
+
+
+            <!-- PROFILE -->
+
+            <section class="section profile">
+
+
+                <h3>Professional Profile</h3>
+
+
+                <p>
+
+                    Experienced professional operating across
+                    enterprise digital ecosystems, partnering
+                    with executive leaders to modernise
+                    technology estates, strengthen data
+                    governance and enable user-centred,
+                    insight-driven decision-making at
+                    organisational scale.
+
+                </p>
+
+
+                <p>
+
+                    Proven ability to shape and scale enterprise
+                    data delivery operating models, aligning data
+                    to strategy, measuring KPIs and ensuring
+                    measurable business outcomes.
+
+                </p>
+
+
+                <p>
+
+                    Expert in bridging data engineering,
+                    analytics, architecture, governance and
+                    security, with hands-on leadership across the
+                    SDLC including software, data engineering,
+                    analytics, ML and AI.
+
+                </p>
+
+
+                <p>
+
+                    Trusted senior leader to C-suite, programme
+                    boards and governance forums, with a track
+                    record of building high-performing,
+                    multidisciplinary teams and creating cultures
+                    of accountability, continuous improvement and
+                    engineering excellence.
+
+                </p>
+
+
+            </section>
+
+
+
+            <!-- =========================
+                 PROFESSIONAL EXPERIENCE
+                 ========================= -->
+
+            <section class="section">
+
+
+                <h3>Professional Experience</h3>
+
+
+
+                <!-- PAPA JOHNS -->
+
+                <article class="job">
+
+
+                    <h4>
+                        Senior Manager, International Data Technology
+                    </h4>
+
+
+                    <div class="company">
+                        Papa Johns
+                    </div>
+
+
+                    <div class="date">
+                        August 2026 – Present
+                    </div>
+
+
+                    <p>
+
+                        Leading international data technology,
+                        platform strategy and data product
+                        development across a complex global
+                        franchise environment.
+
+                    </p>
+
+
+                    <ul>
+
+                        <li>
+                            Shaping international data strategy,
+                            architecture and operating models.
+                        </li>
+
+                        <li>
+                            Developing enterprise data products,
+                            governance standards and common
+                            engineering patterns.
+                        </li>
+
+                        <li>
+                            Supporting modernisation of data
+                            platforms and international data
+                            integration.
+                        </li>
+
+                        <li>
+                            Enabling analytics, automation, AI
+                            and scalable data consumption.
+                        </li>
+
+                    </ul>
+
+
+                </article>
+
+
+
+                <!-- COMPARE THE MARKET -->
+
+                <article class="job">
+
+
+                    <h4>
+                        Engineering Manager – Data Platform
+                    </h4>
+
+
+                    <div class="company">
+                        Compare the Market
+                    </div>
+
+
+                    <div class="date">
+                        April 2025 – July 2026
+                    </div>
+
+
+                    <p>
+
+                        Led the modernisation and operation of
+                        Compare the Market's enterprise data
+                        platform, with accountability across
+                        platform reliability, governance, data
+                        products, engineering standards and
+                        transformation.
+
+                    </p>
+
+
+                    <ul>
+
+                        <li>
+                            Reduced end-to-end data product
+                            delivery from around
+                            <strong>5 weeks to under 24 hours</strong>.
+                        </li>
+
+                        <li>
+                            Introduced patterns supporting
+                            <strong>sub-5-minute data freshness</strong>
+                            for business-critical data products.
+                        </li>
+
+                        <li>
+                            Led the transition from Redshift to
+                            Databricks, improving scalability,
+                            performance and self-service capability.
+                        </li>
+
+                        <li>
+                            Embedded data-as-a-product principles
+                            across ingestion, transformation,
+                            modelling and consumption.
+                        </li>
+
+                        <li>
+                            Strengthened governance through Atlan,
+                            Unity Catalog and Monte Carlo.
+                        </li>
+
+                        <li>
+                            Introduced automated documentation,
+                            developer experience metrics and
+                            AI-supported engineering workflows.
+                        </li>
+
+                        <li>
+                            Balanced strategic transformation with
+                            operational ownership of a production
+                            enterprise data platform.
+                        </li>
+
+                    </ul>
+
+
+                </article>
+
+
+
+                <!-- SKY -->
+
+                <article class="job">
+
+
+                    <h4>
+                        Engineering Manager – Data Platform
+                    </h4>
+
+
+                    <div class="company">
+                        Sky
+                    </div>
+
+
+                    <div class="date">
+                        January 2023 – May 2025
+                    </div>
+
+
+                    <p>
+
+                        Led a multidisciplinary data engineering
+                        and analytics team supporting
+                        personalisation across Sky's global
+                        streaming ecosystem.
+
+                    </p>
+
+
+                    <ul>
+
+                        <li>
+                            Led delivery of large-scale
+                            personalisation data capabilities
+                            across international streaming platforms.
+                        </li>
+
+                        <li>
+                            Reduced operational risk through
+                            improved data quality, incident
+                            management, monitoring and reliability.
+                        </li>
+
+                        <li>
+                            Oversaw 24/7 support for critical
+                            pipelines during major events including
+                            NFL broadcasts and the Paris 2024
+                            Olympics.
+                        </li>
+
+                        <li>
+                            Delivered viewer-impression capabilities
+                            across Peacock devices.
+                        </li>
+
+                        <li>
+                            Led Data Engineering within a major
+                            metadata convergence programme.
+                        </li>
+
+                        <li>
+                            Built and developed a high-performing
+                            team through recruitment, coaching and
+                            mentoring.
+                        </li>
+
+                        <li>
+                            Managed dependencies across engineering,
+                            analytics, product and third-party
+                            providers.
+                        </li>
+
+                    </ul>
+
+
+                </article>
+
+
+
+                <!-- DUNELM -->
+
+                <article class="job">
+
+
+                    <h4>
+                        Agile Delivery Manager – Commercial
+                    </h4>
+
+
+                    <div class="company">
+                        Dunelm
+                    </div>
+
+
+                    <div class="date">
+                        May 2022 – January 2023
+                    </div>
+
+
+                    <p>
+
+                        Led high-impact digital transformation
+                        across commerce and supplier operations.
+
+                    </p>
+
+
+                    <ul>
+
+                        <li>
+                            Delivered a new supplier onboarding
+                            capability to improve commercial
+                            operations and data management.
+                        </li>
+
+                        <li>
+                            Delivered Klarna and PayPal Buy Now,
+                            Pay Later capabilities.
+                        </li>
+
+                        <li>
+                            Led cross-functional Product,
+                            Engineering and Operations teams.
+                        </li>
+
+                        <li>
+                            Owned roadmaps, OKRs, prioritisation,
+                            governance and risk.
+                        </li>
+
+                    </ul>
+
+
+                    <div class="achievement">
+
+                        Greenfield Supplier Portal projected to
+                        deliver
+                        <strong>£5 million savings over five years.</strong>
+
+                    </div>
+
+
+                </article>
+
+
+
+                <!-- TUI -->
+
+                <article class="job">
+
+
+                    <h4>
+                        Technology Delivery Manager
+                    </h4>
+
+
+                    <div class="company">
+                        TUI
+                    </div>
+
+
+                    <div class="date">
+                        September 2019 – June 2022
+                    </div>
+
+
+                    <p>
+
+                        Led the Finance Technology domain within
+                        TUI's global TRIPS transformation,
+                        standardising platforms and business
+                        processes across international markets.
+
+                    </p>
+
+
+                    <ul>
+
+                        <li>
+                            Delivered AWS-based event-driven
+                            services supporting global finance
+                            transformation.
+                        </li>
+
+                        <li>
+                            Led multidisciplinary teams across
+                            Product, Architecture, Engineering,
+                            DevOps, QA and Business Analysis.
+                        </li>
+
+                        <li>
+                            Owned roadmaps, PI planning,
+                            prioritisation, vendor relationships,
+                            budgets and risk.
+                        </li>
+
+                        <li>
+                            Coordinated dependencies across markets,
+                            suppliers and technology teams.
+                        </li>
+
+                    </ul>
+
+
+                </article>
+
+
+            </section>
+
+
+
+            <!-- =========================
+                 EARLIER CAREER
+                 ========================= -->
+
+            <section class="section">
+
+
+                <h3>Earlier Career</h3>
+
+
+
+                <!-- BSH -->
+
+                <div class="earlier-job">
+
+
+                    <h4>
+                        Project Manager / Business Analyst
+                    </h4>
+
+
+                    <div class="company">
+                        BSH Home Appliances Group
+                    </div>
+
+
+                    <div class="date">
+                        April 2017 – September 2019
+                    </div>
+
+
+                    <p>
+
+                        Led operational service management and
+                        transformation initiatives across Bosch,
+                        Siemens, Neff and Gaggenau aftersales
+                        operations.
+
+                    </p>
+
+
+                    <ul>
+
+                        <li>
+                            Managed suppliers, SLAs and service
+                            performance.
+                        </li>
+
+                        <li>
+                            Delivered the UK Consumer Extended
+                            Warranty launch and outsourced payments
+                            capability.
+                        </li>
+
+                        <li>
+                            Introduced digital tooling supporting
+                            field-engineer processes and customer
+                            retention.
+                        </li>
+
+                    </ul>
+
+
+                </div>
+
+
+
+                <!-- SERVEST -->
+
+                <div class="earlier-job">
+
+
+                    <h4>
+                        Key Account & Operations Manager
+                    </h4>
+
+
+                    <div class="company">
+                        Servest SA
+                    </div>
+
+
+                    <div class="date">
+                        January 2015 – March 2017
+                    </div>
+
+
+                    <p>
+
+                        Managed key accounts and nationwide field
+                        operations within the security division.
+
+                    </p>
+
+
+                    <ul>
+
+                        <li>
+                            Managed high-value client accounts,
+                            SLAs and operational reviews.
+                        </li>
+
+                        <li>
+                            Coordinated nationwide field engineering
+                            operations.
+                        </li>
+
+                        <li>
+                            Managed KPIs, financial performance,
+                            HR, training and fleet operations.
+                        </li>
+
+                        <li>
+                            Led projects involving RAMS, site
+                            coordination and health & safety
+                            compliance.
+                        </li>
+
+                    </ul>
+
+
+                </div>
+
+
+
+                <!-- THAMES VALLEY AIR AMBULANCE -->
+
+                <div class="earlier-job">
+
+
+                    <h4>
+                        SQL Database Developer / Engineer |
+                        CRM & Data Management
+                    </h4>
+
+
+                    <div class="company">
+                        Thames Valley Air Ambulance
+                    </div>
+
+
+                    <div class="date">
+                        January 2012 – January 2015
+                    </div>
+
+
+                    <p>
+
+                        Managed SQL databases, CRM systems and data
+                        processes supporting fundraising and
+                        operational activities.
+
+                    </p>
+
+
+                    <ul>
+
+                        <li>
+                            Developed SQL queries, reports and data
+                            processes.
+                        </li>
+
+                        <li>
+                            Supported lottery, direct debit,
+                            payments and operational reporting.
+                        </li>
+
+                        <li>
+                            Maintained data integrity and improved
+                            reporting reliability.
+                        </li>
+
+                        <li>
+                            Managed requirements and relationships
+                            with external IT providers.
+                        </li>
+
+                    </ul>
+
+
+                </div>
+
+
+
+                <!-- CHILTERN DIAL A RIDE -->
+
+                <div class="earlier-job">
+
+
+                    <h4>
+                        Operations Support Manager
+                    </h4>
+
+
+                    <div class="company">
+                        Chiltern Dial a Ride
+                    </div>
+
+
+                    <div class="date">
+                        December 2008 – January 2015
+                    </div>
+
+
+                    <p>
+
+                        Led the operational integration of two
+                        regional Dial a Ride services, redesigning
+                        people, processes, technology and customer
+                        services.
+
+                    </p>
+
+
+                    <ul>
+
+                        <li>
+                            Integrated routes, customers, staff,
+                            vehicles, databases and technology.
+                        </li>
+
+                        <li>
+                            Managed 8 salaried drivers and
+                            20 volunteers.
+                        </li>
+
+                        <li>
+                            Managed databases, CRM, websites and
+                            customer communications.
+                        </li>
+
+                        <li>
+                            Conducted customer research contributing
+                            to securing
+                            <strong>£50,000 in funding.</strong>
+                        </li>
+
+                        <li>
+                            Improved efficiency through route
+                            optimisation and process redesign.
+                        </li>
+
+                    </ul>
+
+
+                </div>
+
+
+
+                <!-- GE HEALTHCARE -->
+
+                <div class="earlier-job">
+
+
+                    <h4>
+                        Information Technology Internship
+                    </h4>
+
+
+                    <div class="company">
+                        GE Healthcare
+                    </div>
+
+
+                    <div class="date">
+                        June 2013 – September 2013
+                    </div>
+
+
+                    <p>
+                        Summer internship supporting the
+                        Information Technology function.
+                    </p>
+
+
+                </div>
+
+
+
+                <!-- WHITBREAD -->
+
+                <div class="earlier-job">
+
+
+                    <h4>
+                        Information Technology Internship
+                    </h4>
+
+
+                    <div class="company">
+                        Whitbread
+                    </div>
+
+
+                    <div class="date">
+                        May 2012 – September 2012
+                    </div>
+
+
+                    <p>
+
+                        Summer internship within the Information
+                        Technology function in Dunstable,
+                        Bedfordshire.
+
+                    </p>
+
+
+                </div>
+
+
+            </section>
+
+
+        </main>
+
+
+    </div>
+    <!-- FOOTER -->
+    <footer class="footer">
+        &copy; 2026 Josephine Ashdown. All rights reserved.
+    </footer>
+
+</div>
+
+</body>
+
+</html>
